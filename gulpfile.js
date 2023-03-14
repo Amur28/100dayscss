@@ -26,7 +26,7 @@ const scripts = () => {
 
 const css = () => {
   return src([
-    'node_modules/slick-carousel/slick/slick.css'
+    'node_modules/slick-carousel/slick/slick.css',
   ])
     .pipe(concat('_libs.scss'))
     .pipe(dest('app/scss'))
@@ -35,7 +35,7 @@ const css = () => {
 
 const js = () => {
   return src([
-    'node_modules/slick-carousel/slick/slick.js'
+    'node_modules/slick-carousel/slick/slick.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
