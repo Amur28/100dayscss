@@ -1,0 +1,62 @@
+.frame-day-3 {
+  background-color: #221d1d;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(100px at 50% 50%);
+  position: relative;
+}
+
+.sky {
+  position: absolute;
+  background-color: skyblue;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.sun {
+  background-color: yellow;
+}
+
+.left-side,
+.right-side {
+  position: absolute;
+  background-color: #fff;
+  width: 80px;
+  height: 35%;
+  z-index: 10;
+  bottom: 30%;
+}
+
+.left-side {
+  right: 40%;
+  clip-path: polygon(80% 0%, 100% 100%, 0% 100%);
+}
+
+.right-side {
+  left: 52%;
+  clip-path: polygon(0% 0%, 100% 100%, 19% 100%);
+}
+
+.shadow {
+  position: absolute;
+  width: 145px;
+  height: 60px;
+  top: 70%;
+  right: 8%;
+  background-color: #ccc;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+  z-index: 90;
+}
+
+.sand {
+  position: absolute;
+  background-color: #f5f57e;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  z-index: 5;
+}
