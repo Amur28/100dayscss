@@ -65,6 +65,7 @@ const cleanDist = () => {
 const building = () => {
   return src([
     'app/css/style.min.css',
+    'app/css/libs.min.css',
     'app/js/script.min.js',
     'app/index.html'
   ], {base: 'app'})
