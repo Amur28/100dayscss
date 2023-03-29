@@ -58,7 +58,7 @@ const browsersync = () => {
 };
 
 const cleanDist = () => {
-  return src('dist')
+  return src('docs')
     .pipe(clean())
 }
 
@@ -68,7 +68,7 @@ const building = () => {
     'app/js/script.min.js',
     'app/index.html'
   ], {base: 'app'})
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
 }
 
 exports.styles = styles;
