@@ -11,7 +11,7 @@ const styles = () => {
   return src("app/scss/style.scss")
     .pipe(autoprefixer({ overrideBrowsersList: ["last 10 version"] }))
     .pipe(concat("style.min.css"))
-    .pipe(scss({ outputStyle: "compressed" }))
+    .pipe(scss({ outputStyle: "expanded" }))
     .pipe(dest("app/css"))
     .pipe(browserSync.stream());
 };
@@ -28,8 +28,8 @@ const css = () => {
   return src([
     'node_modules/slick-carousel/slick/slick.css',
   ])
-    .pipe(concat('_libs.scss'))
-    .pipe(dest('app/scss'))
+    .pipe(concat('libs.min.css'))
+    .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
 
