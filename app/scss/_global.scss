@@ -37,3 +37,27 @@ html {
   width: 400px;
   height: 400px;
 }
+
+.slick-arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &.slick-next {
+    background-image: url(../img/arrow-right.png);
+    right: 0;
+    top: 50%;
+    transform: translate(150%, -50%);
+  }
+
+  &.slick-prev {
+    background-image: url(../img/arrow-left.png);
+    left: 0;
+    top: 50%;
+    transform: translate(-150%, -50%);
+  }
+}

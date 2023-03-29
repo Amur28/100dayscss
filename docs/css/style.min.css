@@ -36,6 +36,28 @@ html {
   height: 400px;
 }
 
+.slick-arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.slick-arrow.slick-next {
+  background-image: url(../img/arrow-right.png);
+  right: 0;
+  top: 50%;
+  transform: translate(150%, -50%);
+}
+.slick-arrow.slick-prev {
+  background-image: url(../img/arrow-left.png);
+  left: 0;
+  top: 50%;
+  transform: translate(-150%, -50%);
+}
+
 /* DAY 1 */
 .frame-day-1 {
   background: linear-gradient(45deg, rgb(85, 0, 255) 0%, rgb(76, 15, 168) 25%, rgb(0, 113, 134) 50%, rgb(4, 165, 195) 75%, rgb(18, 231, 232) 100%);

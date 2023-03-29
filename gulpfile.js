@@ -68,7 +68,8 @@ const building = () => {
     'app/css/libs.min.css',
     'app/js/script.min.js',
     'app/js/libs.min.js',
-    'app/index.html'
+    'app/index.html',
+    'app/img/**/*'
   ], {base: 'app'})
     .pipe(dest('docs'))
 }
