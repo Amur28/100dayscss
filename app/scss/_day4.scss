@@ -1,8 +1,9 @@
 /* DAY 4 */
-$bezier: cubic-bezier(.21,.98,.6,.99);
+$bezier-day-4: cubic-bezier(.21, .98, .6, .99);
+$bg-day-4: #eb5e70;
 
 .frame-day-4 {
-    background: #eb5e70;
+    background: $bg-day-4;
 }
 
 .center-day-4 {
@@ -23,55 +24,61 @@ $bezier: cubic-bezier(.21,.98,.6,.99);
         transform: scale(0);
 
         &--big {
-            animation: bigCircle $bezier 2s infinite alternate;
+            animation: bigCircle $bezier-day-4 2s infinite alternate;
         }
 
         &--mid {
             width: 65px;
             height: 65px;
-            animation: midCircle $bezier 2s infinite alternate;
+            animation: midCircle $bezier-day-4 2s infinite alternate;
         }
 
         &--small {
             width: 30px;
             height: 30px;
-            animation: smallCircle $bezier 2s infinite alternate;
+            animation: smallCircle $bezier-day-4 2s infinite alternate;
         }
     }
-}
 
-@keyframes bigCircle {
-    0% {
-        transform: scale(0);
-    }
-    10% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+    @keyframes bigCircle {
+        0% {
+            transform: scale(0);
+        }
 
-@keyframes midCircle {
-    0% {
-        transform: scale(0);
-    }
-    40% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+        10% {
+            transform: scale(0);
+        }
 
-@keyframes smallCircle {
-    0% {
-        transform: scale(0);
+        100% {
+            transform: scale(1);
+        }
     }
-    70% {
-        transform: scale(0);
+
+    @keyframes midCircle {
+        0% {
+            transform: scale(0);
+        }
+
+        40% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
     }
-    100% {
-        transform: scale(1);
+
+    @keyframes smallCircle {
+        0% {
+            transform: scale(0);
+        }
+
+        70% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
     }
 }
