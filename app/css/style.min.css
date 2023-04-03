@@ -64,18 +64,18 @@ html {
   font-family: "Courier New", "Courier", sans-serif;
 }
 
-.number {
+.center-day-1 .number {
   position: relative;
   width: 200px;
   height: 100px;
 }
-.number .one {
+.center-day-1 .number .one {
   position: absolute;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 13px 0px rgba(34, 60, 80, 0.6);
 }
-.number .one--one {
+.center-day-1 .number .one--one {
   top: 11px;
   left: -10px;
   width: 40px;
@@ -83,7 +83,7 @@ html {
   transform: rotate(-40deg);
   z-index: 1;
 }
-.number .one--two {
+.center-day-1 .number .one--two {
   top: 40px;
   left: -25px;
   width: 100px;
@@ -92,7 +92,7 @@ html {
   transform: rotate(90deg);
   z-index: 10;
 }
-.number .zero {
+.center-day-1 .number .zero {
   position: absolute;
   border-radius: 50%;
   border: 25px solid #fff;
@@ -101,33 +101,30 @@ html {
   height: 100px;
   box-shadow: 0px 0px 13px 0px rgba(34, 60, 80, 0.6);
 }
-.number .zero--one {
+.center-day-1 .number .zero--one {
   top: 0;
   left: 25px;
   z-index: 5;
 }
-.number .zero--two {
+.center-day-1 .number .zero--two {
   top: 0;
   left: 110px;
   z-index: 3;
 }
-
-.big,
-.small {
+.center-day-1 .big,
+.center-day-1 .small {
   color: #fff;
   display: block;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
 }
-
-.big {
+.center-day-1 .big {
   font-size: 86px;
   line-height: 60px;
   margin-top: 5px;
 }
-
-.small {
+.center-day-1 .small {
   font-size: 26px;
   line-height: 18px;
   margin-top: 5px;
@@ -138,28 +135,26 @@ html {
   background-color: rgba(60, 165, 68, 0.6509803922);
 }
 
-.no-animation {
+.center-day-2 .no-animation {
   animation: none !important;
 }
-
-.menu-icon {
+.center-day-2 .menu-icon {
   display: block;
   background-color: transparent;
   width: 100px;
   border: none;
   cursor: pointer;
 }
-.menu-icon.active .menu-icon__item--1 {
+.center-day-2 .menu-icon.active .menu-icon__item--1 {
   animation: first-block 0.7s ease-in-out forwards;
 }
-.menu-icon.active .menu-icon__item--2 {
+.center-day-2 .menu-icon.active .menu-icon__item--2 {
   animation: second-block 0.7s ease-in-out forwards;
 }
-.menu-icon.active .menu-icon__item--3 {
+.center-day-2 .menu-icon.active .menu-icon__item--3 {
   animation: third-block 0.7s ease-in-out forwards;
 }
-
-.menu-icon__item {
+.center-day-2 .menu-icon__item {
   display: block;
   background-color: #fff;
   width: 100%;
@@ -167,22 +162,21 @@ html {
   border-radius: 5px;
   box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.51);
 }
-.menu-icon__item--1 {
+.center-day-2 .menu-icon__item--1 {
   z-index: 5;
   animation: first-block-reverse 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 }
-.menu-icon__item--2 {
+.center-day-2 .menu-icon__item--2 {
   z-index: 10;
   animation: second-block-reverse 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 }
-.menu-icon__item--3 {
+.center-day-2 .menu-icon__item--3 {
   z-index: 15;
   animation: third-block-reverse 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 }
-.menu-icon__item + .menu-icon__item {
+.center-day-2 .menu-icon__item + .center-day-2 .menu-icon__item {
   margin-top: 15px;
 }
-
 @keyframes first-block {
   0% {
     transform: translateY(0) rotate(0);
@@ -247,19 +241,19 @@ html {
     transform: translateY(0);
   }
 }
+
 /* DAY 3 */
 .frame-day-3 {
   background-color: #221d1d;
 }
 
-.circle {
+.center-day-3 .circle {
   width: 200px;
   height: 200px;
   clip-path: circle(100px at 50% 50%);
   position: relative;
 }
-
-.sky {
+.center-day-3 .sky {
   position: absolute;
   background: skyblue;
   height: 100%;
@@ -267,8 +261,7 @@ html {
   z-index: 1;
   animation: skyFade 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
-
-.sun {
+.center-day-3 .sun {
   position: absolute;
   background: yellow;
   width: 40px;
@@ -280,9 +273,8 @@ html {
   transform-origin: 50% 400%;
   animation: sunrise 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
-
-.left-side,
-.right-side {
+.center-day-3 .left-side,
+.center-day-3 .right-side {
   position: absolute;
   background: #fff;
   width: 80px;
@@ -290,20 +282,17 @@ html {
   z-index: 10;
   bottom: 60px;
 }
-
-.left-side {
+.center-day-3 .left-side {
   right: 40%;
   clip-path: polygon(80% 0%, 100% 100%, 0% 100%);
   animation: pyramideFade 5s cubic-bezier(0.4, 0, 0.49, 1) infinite reverse;
 }
-
-.right-side {
+.center-day-3 .right-side {
   left: 52%;
   clip-path: polygon(0% 0%, 100% 100%, 19% 100%);
   animation: pyramideFade 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
-
-.shadow {
+.center-day-3 .shadow {
   position: absolute;
   width: 360px;
   top: 140px;
@@ -315,8 +304,7 @@ html {
   z-index: 90;
   animation: shadowOnTheFloor 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
-
-.sand {
+.center-day-3 .sand {
   position: absolute;
   background: #f5f57e;
   height: 30%;
@@ -325,7 +313,6 @@ html {
   z-index: 50;
   animation: sandFade 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
-
 @keyframes sunrise {
   0% {
     background: #221d1d;
@@ -405,6 +392,7 @@ html {
     background: #221d1d;
   }
 }
+
 /* DAY 4 */
 .frame-day-4 {
   background: #eb5e70;
@@ -439,7 +427,6 @@ html {
   height: 30px;
   animation: smallCircle cubic-bezier(0.21, 0.98, 0.6, 0.99) 2s infinite alternate;
 }
-
 @keyframes bigCircle {
   0% {
     transform: scale(0);

@@ -56,7 +56,7 @@ $bg-day-2: #3ca544a6;
       animation: third-block-reverse .7s cubic-bezier(0.30, 1, 0.70, 1) forwards;
     }
 
-    &+& {
+    & + & {
       margin-top: 15px;
     }
   }
